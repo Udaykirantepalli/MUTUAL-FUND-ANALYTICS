@@ -1,14 +1,14 @@
 import pandas as pd
 
 scorecard = pd.read_csv(
-    r"C:\Users\UDAY KIRAN\Desktop\mutual fund analytics\outputs\fund_scorecard.csv"
+    r"outputs/fund_scorecard.csv"
 )
 
 risk = input(
     "Enter Risk Appetite (Low/Moderate/High): "
 )
 
-# Demo risk buckets
+# Demo risk bucket
 scorecard["risk_grade"] = "Moderate"
 
 recommendations = (
